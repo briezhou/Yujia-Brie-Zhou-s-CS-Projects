@@ -1,0 +1,50 @@
+for order speed test
+
+Enter # strings to insert into hashmap.ULLMap: 10000
+class hashmap.ULLMap: 0.54 sec
+
+Enter # strings to insert into hashmap.MyHashMap: 20000
+class hashmap.MyHashMap: 0.03 sec
+
+Enter # strings to insert into Java's HashMap: 30000
+Java's Built-in HashMap: 0.02 sec
+
+Would you like to try more timed-tests? (y/n): y
+
+Enter # strings to insert into hashmap.ULLMap: 40000
+class hashmap.ULLMap: 8.26 sec
+
+Enter # strings to insert into hashmap.MyHashMap: 45000
+class hashmap.MyHashMap: 0.03 sec
+
+Enter # strings to insert into Java's HashMap: 50000
+Java's Built-in HashMap: 0.04 sec
+
+speed varies a lot. for size 10000, it takes 0.54 sec which is much longer than size of 20000, 30000, 50000. It is strange that I observed that for size 40000, it takes 8.26 sec.
+
+
+for random speed test
+
+What would you like L to be?: 15
+
+Enter # strings to insert into hashmap.ULLMap: 10000
+class hashmap.ULLMap: 0.31 sec
+
+Enter # strings to insert into your hashmap.MyHashMap: 20000
+class hashmap.MyHashMap: 0.02 sec
+
+Enter # strings to insert into Java's HashMap: 30000
+Java's Built-in HashMap: 0.02 sec
+
+Would you like to try more timed-tests? (y/n)40000
+
+Enter # strings to insert into hashmap.ULLMap: 40000
+class hashmap.ULLMap: 4.73 sec
+
+Enter # strings to insert into your hashmap.MyHashMap: 50000
+class hashmap.MyHashMap: 0.03 sec
+
+Enter # strings to insert into Java's HashMap: 60000
+Java's Built-in HashMap: 0.03 sec
+
+it has a similar trend as order speed test, but generally faster. With longer time at size 10000, and much longer time at 40000, but even for these two, the time this random speed test takes is shorter than that or in order test.
